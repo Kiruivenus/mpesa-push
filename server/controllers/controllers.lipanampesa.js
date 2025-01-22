@@ -3,7 +3,7 @@ import 'dotenv/config';
 import { getTimestamp } from "../Utils/utils.timestamp.js";
 
 // Static ngrok callback URL
-const CALLBACK_URL = "https://f905-102-215-33-50.ngrok-free.app";
+const CALLBACK_URL = "https://mpesa-push-8o4o.vercel.app";
 
 // @desc Initiate STK Push
 // @method POST
