@@ -8,12 +8,16 @@ const app = express()
 // middlewares
 app.use(express.json())
 app.use(cors())
+app.get("/", (req, res) => {
+    res.send("Server is now live");
+  });
 
 // import routes
 import lipaNaMpesaRoutes from "./routes/routes.lipanampesa.js"
 app.use('/api',lipaNaMpesaRoutes)
 
 const port = process.env.PORT
+
 
 app.listen(port, () => {
     console.log(`App listening on port ${port}`)
